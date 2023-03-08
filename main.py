@@ -15,7 +15,7 @@ def encode_str(data_string):
     return res
 
 
-def decode(data_string, encoded_pw):
+def decode(encoded_pw, data_string):
     print(f'The encoded password is {encoded_pw}, and the original password is {data_string}.\n')
 
 
@@ -33,7 +33,7 @@ def main():
             encoded_pw = encode_str(data_string)
             # Set a variable equal to the RETURN of function encode(); calls encode()
         elif user_selection == 2:
-            decode(data_string, encoded_pw)  # calls decode()
+            decode(encoded_pw, data_string)  # calls decode()
         else:
             break
 
